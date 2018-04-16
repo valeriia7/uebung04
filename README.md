@@ -13,6 +13,7 @@ Gegeben ist eine generische Implementierung für das Set, in Anlehnung an die Mu
 
 - Implementieren Sie durch das Interface `Iterable` vorgeschriebene Methode `iterator`.
 - Implementieren Sie dazu einen Iterator, welche alle Elemente besucht.
+- Stellen Sie sicher, dass der Testcase `TestSet.testStringSet` korrekt durchläuft.
 
 ### Hinweise
 
@@ -29,6 +30,7 @@ Das heisst, das zuletzt mit `push` hinzugefügte Element das wird als nächstes 
 - Implementieren Sie (nur) die durch das Interface `Iterable` vorgeschriebene Methode `iterator`.
 - Implementieren Sie dazu einen _Reverse-Iterator_, der die Elemente in umgekehrter Reihenfolge besucht.
 	Für einen Stack bedeutet das: in der Reihenfolge, in der die Elemente hinzugefügt wurden, also _first in, first out_.
+- Stellen Sie sicher, dass der Testcase `StackTest.testStack` korrekt durchläuft.
 
 Ein Beispiel: Werden in einen `Stack<Integer>` die Werte 1, 4, 5, 2 gepusht, so ist die Reihenfolge bei `pop` 2, 5, 4, 1.
 
@@ -76,6 +78,7 @@ for (int i : stack)
 
 - Implementieren Sie die Methode `SetImpl<T>.leafIterator`.
 - Implementieren Sie diesen Iterator so, dass nur **Blätter** zurückgegeben werden, also Elemente **ohne Nachfolger**.
+- Stellen Sie sicher, dass der Testcase `SetTest.testLeafIterator` korrekt durchläuft.
 
 ### Hinweise
 
