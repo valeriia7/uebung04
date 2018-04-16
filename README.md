@@ -81,5 +81,5 @@ for (int i : stack)
 
 Diese Aufgabe ist aussergewöhnlich trickreich!
 Die Hauptschwierigkeit besteht darin, dass auch die `hasNext` Methode verlässlich funktioniert.
-Eine Herangehensweise ist, neben der Agenda für die Traversierung der Baumstruktur auch eineReferenz auf das nächste Blatt vorzuhalten.
-Wird nun das nächste Element angefordert, so kann man dieses schnell zurückgeben, und muss anschließend gleich versuchen, das nächste zu finden.
+Eine Herangehensweise ist, neben der Agenda für die Traversierung der Baumstruktur auch eine Referenz auf das nächste Blatt zu unterhalten.
+Wird nun das nächste Element angefordert, so kann man dieses schnell zurückgeben, muss aber anschließend gleich versuchen, das nächste zu finden.
