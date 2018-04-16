@@ -14,7 +14,10 @@ Gegeben ist eine generische Implementierung für das Set, in Anlehnung an die Mu
 - Implementieren Sie durch das Interface `Iterable` vorgeschriebene Methode `iterator`.
 - Implementieren Sie dazu einen Iterator, welche alle Elemente besucht.
 
-> Hinweis: Die Verwendung einer Agenda ist zwingend notwendig!
+### Hinweise
+
+- Die Verwendung einer Agenda ist zwingend notwendig!
+- Was ändert sich an der Besuchsreihenfolge, wenn Sie für die Agenda statt einer Liste einen Stack verwenden?
 
 
 ## Aufgabe 2: Reverse-Iterator für `Stack<T>`
