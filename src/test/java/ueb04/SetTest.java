@@ -59,7 +59,24 @@ class SetTest {
 		while (it.hasNext())
 			li.add(it.next());
 
+		System.out.println(li);
+
 		assertEquals(1, li.size());
 		assertEquals("herum", li.get(0));
+
+		// noch ein Blatt einfuegen (rechts von "um")
+		impl.add("umi");
+		System.out.println(impl);
+
+		li.clear();
+		it = impl.leafIterator();
+		while (it.hasNext())
+			li.add(it.next());
+
+		assertEquals(2, li.size());
+		assertTrue(li.contains("herum"));
+		assertTrue(li.contains("umi"));
+
+		System.out.println(li);
 	}
 }

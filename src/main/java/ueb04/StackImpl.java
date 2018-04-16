@@ -11,8 +11,28 @@ class StackImpl<T> implements Stack<T> {
 	 */
 	@Override
 	public Iterator<T> iterator() {
-		// Iterator implementieren...
-		throw new UnsupportedOperationException();
+		return new Iterator<T>() {
+			StackImpl<Element> rev = new StackImpl<>();
+
+			// Konstruktor fuer anonyme innere Klasse
+			{
+				// Alle Elemente in den Stack legen => dreht die Reihenfolge um!
+				Element it = top;
+				while (it != null) {
+					rev.push(it);
+					it = it.next;
+				}
+			}
+			@Override
+			public boolean hasNext() {
+				return rev.size() > 0;
+			}
+			@Override
+			public T next() {
+				// pop liefert uns jetzt FIFO
+				return rev.pop().value;
+			}
+		};
 	}
 
 	private class Element {
