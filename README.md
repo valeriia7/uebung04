@@ -11,8 +11,8 @@ In dieser Übung implementieren wir Iteratoren für die Datenstrukturen _Stack_ 
 
 Gegeben ist eine generische Implementierung für das Set, in Anlehnung an die Musterlösung der [Übung 3](https://github.com/hsro-wif-prg2/uebung03).
 
-- Implementieren Sie durch das Interface `Iterable` vorgeschriebene Methode `iterator`.
-- Implementieren Sie dazu einen Iterator, welche alle Elemente besucht.
+- Implementieren Sie die durch das Interface `Iterable` vorgeschriebene Methode `iterator`.
+- Implementieren Sie dazu einen Iterator, welcher alle Elemente besucht.
 - Stellen Sie sicher, dass der Testcase `TestSet.testStringSet` korrekt durchläuft.
 
 ### Hinweise
@@ -70,7 +70,7 @@ for (int i : stack)
 
 ### Hinweise
 
-- Auch die Iteration einer sequenzielle Datenstruktur kann mit einer Agenda realisiert werden; wie verhält sich diese über die Lebensdauer?
+- Auch die Iteration einer sequenziellen Datenstruktur kann mit einer Agenda realisiert werden; wie verhält sich diese über die Lebensdauer (der Iteration)?
 - Welche Datenstruktur eignet sich, um die Reihenfolge zu invertieren?
 
 
